@@ -40,7 +40,8 @@ owners. Clean and techy but still human. Voice: clear, confident, jargon-free.
 - **Remote-only.** All support is delivered **remotely — no on-site visits.** Keep
   "local / on-site / pop by" language off the site; emphasize remote support & monitoring,
   "help from anywhere."
-- **No phone on the site.** Contact = **consult-request form + email** (hello@kybernosit.com).
+- **No phone on the site.** Contact = **consult-request form + email** (info@kybernosit.com —
+  the same address the form delivers to via FormSubmit).
 - **Services (trimmed by Josh):** just **Managed IT** and **Helpdesk Support** (dropped
   Cybersecurity, Cloud & Networking, Backup & Recovery). Plus a "book a free consult" card.
 - **Voice guardrail:** solo operator — read *neither* way. Neutral brand "we"; **never imply a

@@ -478,10 +478,10 @@
     stroke: var(--accent-dk);
   }
 
-  /* Why us */
+  /* Why us (3 cards) */
   .why-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   .why {
@@ -761,6 +761,9 @@
     .cards,
     .steps {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .why-grid {
+      grid-template-columns: 1fr;
     }
     .contact-grid {
       grid-template-columns: 1fr;
