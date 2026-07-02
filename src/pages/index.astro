@@ -1,0 +1,591 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Kybernos IT home">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#fde6de"></circle>
+            <circle cx="24" cy="24" r="16" stroke="#e0562f" stroke-width="2.6"></circle>
+            <circle cx="24" cy="24" r="5.5" stroke="#137d73" stroke-width="2.6"></circle>
+            <circle cx="24" cy="24" r="2" fill="#e0562f"></circle>
+            <g stroke="#e0562f" stroke-width="2.6" stroke-linecap="round">
+              <line x1="24" y1="6" x2="24" y2="13"></line><line x1="24" y1="35" x2="24" y2="42"></line>
+              <line x1="6" y1="24" x2="13" y2="24"></line><line x1="35" y1="24" x2="42" y2="24"></line>
+            </g>
+            <g stroke="#137d73" stroke-width="2.6" stroke-linecap="round">
+              <line x1="11.5" y1="11.5" x2="16.5" y2="16.5"></line><line x1="31.5" y1="31.5" x2="36.5" y2="36.5"></line>
+              <line x1="36.5" y1="11.5" x2="31.5" y2="16.5"></line><line x1="16.5" y1="31.5" x2="11.5" y2="36.5"></line>
+            </g>
+          </svg>
+        </span>
+        <span>Kybernos IT<small>Friendly Remote IT</small></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="navlinks" id="menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#contact">Book a free consult</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Open menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+            ><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"
+            ></line><line x1="4" y1="17" x2="20" y2="17"></line></svg
+          >
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Kybernos IT · your tech, in good hands</span>
+          <h1>The steady hand at the <span class="accent">helm of your technology</span></h1>
+          <p class="lede">
+            Friendly, jargon-free remote IT support for small businesses. We're the calm, capable
+            partner you turn to when tech goes sideways — and the reason it usually doesn't.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book a free consult</a>
+            <a class="btn btn-ghost" href="#services">How we help</a>
+          </div>
+          <div class="trust">
+            <span
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M5 13l4 4L19 7"></path></svg
+              > Real people, fast</span
+            >
+            <span
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M5 13l4 4L19 7"></path></svg
+              > No jargon, ever</span
+            >
+            <span
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M5 13l4 4L19 7"></path></svg
+              > Friendly &amp; remote</span
+            >
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="art-card">
+            <svg
+              viewBox="0 0 420 300"
+              role="img"
+              aria-label="Illustration of a small boat safely reaching a friendly harbour at sunrise"
+            >
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"
+                  ><stop offset="0" stop-color="#ffe6c9"></stop><stop
+                    offset="1"
+                    stop-color="#fff4e8"></stop></linearGradient
+                >
+                <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"
+                  ><stop offset="0" stop-color="#57c2b6"></stop><stop
+                    offset="1"
+                    stop-color="#1f9e93"></stop></linearGradient
+                >
+              </defs>
+              <rect x="0" y="0" width="420" height="300" rx="16" fill="url(#sky)"></rect>
+              <circle cx="315" cy="86" r="40" fill="#ffd07a"></circle>
+              <circle cx="315" cy="86" r="54" fill="#ffd07a" opacity=".28"></circle>
+              <!-- distant hills -->
+              <path d="M0 168 Q70 138 150 162 T300 158 T420 168 V300 H0 Z" fill="#f3d5ad" opacity=".7"></path>
+              <!-- sea -->
+              <path d="M0 182 H420 V300 H0 Z" fill="url(#sea)"></path>
+              <!-- lighthouse -->
+              <g>
+                <rect x="52" y="120" width="20" height="66" rx="3" fill="#fff"></rect>
+                <rect x="52" y="120" width="20" height="14" fill="#f2704f"></rect>
+                <rect x="52" y="150" width="20" height="14" fill="#f2704f"></rect>
+                <path d="M50 120 L74 120 L69 108 L55 108 Z" fill="#173a3a"></path>
+                <circle cx="62" cy="103" r="5" fill="#f0b429"></circle>
+              </g>
+              <!-- dock -->
+              <rect x="30" y="196" width="120" height="9" rx="3" fill="#c98a52"></rect>
+              <rect x="44" y="205" width="7" height="20" fill="#a06a3a"></rect>
+              <rect x="128" y="205" width="7" height="20" fill="#a06a3a"></rect>
+              <!-- boat -->
+              <g>
+                <path d="M212 214 h84 l-14 26 h-56 z" fill="#fff"></path>
+                <path d="M212 214 h84 l-4 8 h-76 z" fill="#e0562f"></path>
+                <rect x="250" y="150" width="4" height="66" fill="#173a3a"></rect>
+                <path d="M254 152 L300 206 L254 206 Z" fill="#f2704f"></path>
+                <path d="M250 152 L214 206 L250 206 Z" fill="#ffd07a"></path>
+              </g>
+              <!-- waves -->
+              <g stroke="#eafaf7" stroke-width="3" fill="none" opacity=".7" stroke-linecap="round">
+                <path d="M40 250 q14 -8 28 0 t28 0"></path>
+                <path d="M150 268 q14 -8 28 0 t28 0"></path>
+                <path d="M300 256 q14 -8 28 0 t28 0"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="float-chip chip-1">
+            <span class="b bg-teal"
+              ><svg
+                viewBox="0 0 24 24"
+                class="st-teal"
+                stroke-linecap="round"
+                stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg
+              ></span
+            >
+            Backed up &amp; safe
+          </div>
+          <div class="float-chip chip-2">
+            <span class="b bg-coral"
+              ><svg
+                viewBox="0 0 24 24"
+                class="st-coral"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><path d="M4 18v-6a8 8 0 0116 0v6"></path><rect
+                  x="2"
+                  y="14"
+                  width="4"
+                  height="6"
+                  rx="1.5"></rect><rect x="18" y="14" width="4" height="6" rx="1.5"></rect></svg
+              ></span
+            >
+            We're here to help
+          </div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"
+        ><path d="M0 30 Q 180 60 360 30 T 720 30 T 1080 30 T 1440 30 V60 H0 Z" fill="#f6ecdf"></path></svg
+      >
+    </section>
+
+    <!-- SERVICES -->
+    <section class="band" id="services" style="padding-top:52px">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What we help with</span>
+          <h2 style="margin-top:.4em">All your tech, looked after with care</h2>
+          <p>
+            Whether it's the daily niggles or the big-picture plan, we're the friendly, dependable
+            help you can lean on.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon-badge bg-coral">
+              <svg viewBox="0 0 24 24" class="st-coral" stroke-linecap="round" stroke-linejoin="round"
+                ><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg
+              >
+            </div>
+            <h3>Managed IT</h3>
+            <p>
+              Think of us as your own IT department, without the overheads. We keep everything up to
+              date, running and ready — monitored and maintained remotely.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon-badge bg-teal">
+              <svg viewBox="0 0 24 24" class="st-teal" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M4 18v-6a8 8 0 0116 0v6"></path><rect x="2" y="14" width="4" height="6" rx="1.5"
+                ></rect><rect x="18" y="14" width="4" height="6" rx="1.5"></rect></svg
+              >
+            </div>
+            <h3>Helpdesk Support</h3>
+            <p>
+              A friendly, real person on the other end whenever something's not working. We connect
+              securely and sort it, kindly and quickly.
+            </p>
+          </article>
+          <article class="card" style="background:var(--ink);border:none;color:var(--cream)">
+            <div class="icon-badge" style="background:rgba(255,255,255,.12)">
+              <svg viewBox="0 0 24 24" stroke="#ffd07a" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M21 15a2 2 0 01-2 2H8l-4 4V5a2 2 0 012-2h11a2 2 0 012 2z"></path></svg
+              >
+            </div>
+            <h3 style="color:#fff">Just want to chat it through?</h3>
+            <p style="color:#c9ddd9">
+              No sales pitch — just a friendly conversation about your business and how we might
+              help. Grab a free consult.
+            </p>
+            <a class="btn btn-primary" style="margin-top:14px" href="#contact">Book a free consult</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Why folks choose us</span>
+          <h2 style="margin-top:.4em">Tech help that actually feels human</h2>
+          <p>
+            We treat your business like our own — with patience, honesty and a genuine care to get
+            it right.
+          </p>
+        </div>
+        <div class="why-grid">
+          <div class="why">
+            <span class="em"
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg
+              ></span
+            >
+            <div>
+              <h3>Fast response</h3>
+              <p>
+                Reach a real person quickly. We know a stuck system means a stuck business, so we
+                don't leave you waiting.
+              </p>
+            </div>
+          </div>
+          <div class="why">
+            <span class="em"
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><path d="M8 10h8M8 14h5"></path><path
+                  d="M21 12a9 9 0 01-9 9c-1.6 0-3.1-.4-4.4-1L3 21l1-4.6A9 9 0 1121 12z"></path></svg
+              ></span
+            >
+            <div>
+              <h3>Plain-English support</h3>
+              <p>
+                No baffling jargon or talking down. We explain things simply, so you always
+                understand what's happening and why.
+              </p>
+            </div>
+          </div>
+          <div class="why">
+            <span class="em"
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path
+                  d="M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18"></path></svg
+              ></span
+            >
+            <div>
+              <h3>Support from anywhere</h3>
+              <p>
+                Everything's handled remotely — we connect securely and fix most issues on the spot,
+                so there's no waiting around for a visit.
+              </p>
+            </div>
+          </div>
+          <div class="why">
+            <span class="em"
+              ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                ><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg
+              ></span
+            >
+            <div>
+              <h3>Proactive monitoring</h3>
+              <p>
+                We keep a quiet eye on your systems day and night, heading off little problems long
+                before you'd ever notice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="band" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2 style="margin-top:.4em">Coming aboard is easy</h2>
+          <p>Three relaxed steps from first hello to smooth-sailing technology.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="knot"><span>1</span></div>
+            <h3>Assess</h3>
+            <p>
+              We start with a friendly, free chat and a look at your current setup — no pressure, no
+              cost, just honest advice.
+            </p>
+          </div>
+          <div class="step">
+            <div class="knot"><span>2</span></div>
+            <h3>Plan</h3>
+            <p>
+              You get a clear, simple plan with straight-talking recommendations and fair, upfront
+              pricing. You choose what feels right.
+            </p>
+          </div>
+          <div class="step">
+            <div class="knot"><span>3</span></div>
+            <h3>Support</h3>
+            <p>
+              We take the helm and keep things running — looking after your tech and staying just a
+              message away.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">Say hello</span>
+          <h2 style="margin-top:.4em">Request a consult</h2>
+          <p style="color:var(--ink-soft)">
+            Drop us a few details about your business and what's on your mind. We'll get back to you
+            within one business day — warmly, and with no obligation at all.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="ic"
+                ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                  ><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M4 7l8 6 8-6"></path></svg
+                ></span
+              ><span>Email us<br /><a href="mailto:hello@kybernosit.com">hello@kybernosit.com</a></span>
+            </li>
+            <li>
+              <span class="ic"
+                ><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                  ><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg
+                ></span
+              ><span
+                >How we work<br /><span style="color:var(--muted);font-weight:400"
+                  >Remote support, wherever you are</span
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form class="consult" id="consultForm" novalidate>
+            <div class="two">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  placeholder="Jane Smith"
+                />
+              </div>
+              <div class="field">
+                <label for="company">Business name</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                  placeholder="Smith &amp; Co."
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="jane@business.com"
+              />
+            </div>
+            <div class="field">
+              <label for="topic">What can we help with?</label>
+              <select id="topic" name="topic">
+                <option>General IT support</option>
+                <option>Managed IT / outsourced IT</option>
+                <option>Helpdesk &amp; ongoing support</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">A little more detail</label>
+              <textarea id="message" name="message" placeholder="Tell us what's on your mind..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Request my consult</button>
+            <p class="form-note">
+              By submitting, you agree to be contacted about your enquiry. We never share your
+              details.
+            </p>
+          </form>
+          <div class="thanks" id="thanks" role="status" aria-live="polite">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><circle cx="12" cy="12" r="10"></circle><path d="M8 12.5l2.5 2.5L16 9"></path></svg
+            >
+            <h3>Thanks so much — talk soon!</h3>
+            <p style="margin:0;color:var(--ink-soft)">
+              We've got your message and will be in touch within one business day. Can't wait? Email
+              us any time at <a href="mailto:hello@kybernosit.com">hello@kybernosit.com</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <div class="foot-brand">
+            <span class="mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,.08)"></circle>
+                <circle cx="24" cy="24" r="16" stroke="#f2704f" stroke-width="2.6"></circle>
+                <circle cx="24" cy="24" r="5.5" stroke="#57c2b6" stroke-width="2.6"></circle>
+                <circle cx="24" cy="24" r="2" fill="#f2704f"></circle>
+                <g stroke="#f2704f" stroke-width="2.6" stroke-linecap="round">
+                  <line x1="24" y1="6" x2="24" y2="13"></line><line x1="24" y1="35" x2="24" y2="42"></line>
+                  <line x1="6" y1="24" x2="13" y2="24"></line><line x1="35" y1="24" x2="42" y2="24"></line></g
+                >
+                <g stroke="#57c2b6" stroke-width="2.6" stroke-linecap="round">
+                  <line x1="11.5" y1="11.5" x2="16.5" y2="16.5"></line><line x1="31.5" y1="31.5" x2="36.5" y2="36.5"></line>
+                  <line x1="36.5" y1="11.5" x2="31.5" y2="16.5"></line><line x1="16.5" y1="31.5" x2="11.5" y2="36.5"></line></g
+                >
+              </svg>
+            </span>
+            Kybernos IT
+          </div>
+          <p style="margin-top:12px;max-width:34ch;color:#a9c6c1;font-size:.95rem">
+            Friendly, remote IT support for small business. The steady hand at the helm of your
+            technology.
+          </p>
+        </div>
+        <div class="foot-cols">
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Managed IT</a></li>
+              <li><a href="#services">Helpdesk Support</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#why">Why us</a></li>
+              <li><a href="#how">How it works</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="mailto:hello@kybernosit.com">hello@kybernosit.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Kybernos IT · kybernosit.com</span>
+        <span>Your friendly harbour for technology.</span>
+      </div>
+    </div>
+  </footer>
+</SiteLayout>
+
+<script>
+  (function () {
+    const toggle = document.getElementById("navToggle");
+    const menu = document.getElementById("menu");
+    if (!toggle || !menu) return;
+    toggle.addEventListener("click", function () {
+      const open = menu.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+    menu.addEventListener("click", function (e) {
+      const target = e.target as HTMLElement;
+      if (target.tagName === "A") {
+        menu.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+  (function () {
+    const form = document.getElementById("consultForm") as HTMLFormElement | null;
+    const thanks = document.getElementById("thanks");
+    if (!form || !thanks) return;
+    const ENDPOINT = "https://formsubmit.co/ajax/info@kybernosit.com";
+    const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+    let errorEl: HTMLParagraphElement | null = null;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      if (errorEl) {
+        errorEl.remove();
+        errorEl = null;
+      }
+      const originalLabel = submitBtn ? submitBtn.innerHTML : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Sending…";
+      }
+      const payload: Record<string, string> = {};
+      new FormData(form).forEach((value, key) => {
+        payload[key] = String(value);
+      });
+      payload._subject = "New consult request — Kybernos IT";
+      payload._template = "table";
+      payload._captcha = "false";
+      payload._autoresponse =
+        "Thanks for reaching out to Kybernos IT! We've got your message and we'll be in touch within one business day. — Kybernos IT";
+
+      fetch(ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
+        .then(async (res) => {
+          let data: { success?: unknown } = {};
+          try {
+            data = await res.json();
+          } catch {
+            data = {};
+          }
+          if (res.ok && data && data.success) {
+            form.style.display = "none";
+            thanks.classList.add("show");
+            thanks.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else {
+            throw new Error("Submission failed");
+          }
+        })
+        .catch(() => {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalLabel;
+          }
+          errorEl = document.createElement("p");
+          errorEl.setAttribute("role", "alert");
+          errorEl.className = "form-note";
+          errorEl.style.color = "var(--coral, #e0562f)";
+          errorEl.textContent =
+            "Something went wrong — please email us directly at info@kybernosit.com";
+          form.appendChild(errorEl);
+        });
+    });
+  })();
+</script>
