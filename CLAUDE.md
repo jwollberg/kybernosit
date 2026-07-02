@@ -31,6 +31,12 @@ owners. Clean and techy but still human. Voice: clear, confident, jargon-free.
 
 - **Design: Option C — "Harbor"** (warm, friendly; serif headings, harbour/helm motif).
   Permanent Kybernos design. Working mockup: `design-options/option-c-harbor.html`.
+- **Brand kit (applied):** lives in `brand-kit/` at the repo root; the files the site
+  serves (favicon + logo) are copied into `public/brand-kit/`. Palette: **accent steel
+  blue `#2F5D8A`**, paper `#FBFAF7` (backgrounds), ink `#262B33` (text). Fonts:
+  **Marcellus** for headings/wordmark (single weight — never bold it) + **Jost** for
+  body text. Wordmark is all-caps Marcellus with 0.22em letter-spacing; descriptor is
+  Jost Medium, 0.42em. The Harbor layout was kept and recolored to this palette.
 - **Remote-only.** All support is delivered **remotely — no on-site visits.** Keep
   "local / on-site / pop by" language off the site; emphasize remote support & monitoring,
   "help from anywhere."

@@ -8,22 +8,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
   <header class="site">
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="Kybernos IT home">
-        <span class="mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none">
-            <circle cx="24" cy="24" r="22" fill="#fde6de"></circle>
-            <circle cx="24" cy="24" r="16" stroke="#e0562f" stroke-width="2.6"></circle>
-            <circle cx="24" cy="24" r="5.5" stroke="#137d73" stroke-width="2.6"></circle>
-            <circle cx="24" cy="24" r="2" fill="#e0562f"></circle>
-            <g stroke="#e0562f" stroke-width="2.6" stroke-linecap="round">
-              <line x1="24" y1="6" x2="24" y2="13"></line><line x1="24" y1="35" x2="24" y2="42"></line>
-              <line x1="6" y1="24" x2="13" y2="24"></line><line x1="35" y1="24" x2="42" y2="24"></line>
-            </g>
-            <g stroke="#137d73" stroke-width="2.6" stroke-linecap="round">
-              <line x1="11.5" y1="11.5" x2="16.5" y2="16.5"></line><line x1="31.5" y1="31.5" x2="36.5" y2="36.5"></line>
-              <line x1="36.5" y1="11.5" x2="31.5" y2="16.5"></line><line x1="16.5" y1="31.5" x2="11.5" y2="36.5"></line>
-            </g>
-          </svg>
-        </span>
+        <img class="mark" src="/brand-kit/icon.svg" alt="" width="42" height="42" />
         <span>Kybernos IT<small>Friendly Remote IT</small></span>
       </a>
       <nav aria-label="Primary">
@@ -94,45 +79,45 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             >
               <defs>
                 <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"
-                  ><stop offset="0" stop-color="#ffe6c9"></stop><stop
+                  ><stop offset="0" stop-color="#e8eef5"></stop><stop
                     offset="1"
-                    stop-color="#fff4e8"></stop></linearGradient
+                    stop-color="#fbfaf7"></stop></linearGradient
                 >
                 <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"
-                  ><stop offset="0" stop-color="#57c2b6"></stop><stop
+                  ><stop offset="0" stop-color="#5c86b0"></stop><stop
                     offset="1"
-                    stop-color="#1f9e93"></stop></linearGradient
+                    stop-color="#2f5d8a"></stop></linearGradient
                 >
               </defs>
               <rect x="0" y="0" width="420" height="300" rx="16" fill="url(#sky)"></rect>
-              <circle cx="315" cy="86" r="40" fill="#ffd07a"></circle>
-              <circle cx="315" cy="86" r="54" fill="#ffd07a" opacity=".28"></circle>
+              <circle cx="315" cy="86" r="40" fill="#eed9a8"></circle>
+              <circle cx="315" cy="86" r="54" fill="#eed9a8" opacity=".28"></circle>
               <!-- distant hills -->
-              <path d="M0 168 Q70 138 150 162 T300 158 T420 168 V300 H0 Z" fill="#f3d5ad" opacity=".7"></path>
+              <path d="M0 168 Q70 138 150 162 T300 158 T420 168 V300 H0 Z" fill="#e6e2d5" opacity=".7"></path>
               <!-- sea -->
               <path d="M0 182 H420 V300 H0 Z" fill="url(#sea)"></path>
               <!-- lighthouse -->
               <g>
                 <rect x="52" y="120" width="20" height="66" rx="3" fill="#fff"></rect>
-                <rect x="52" y="120" width="20" height="14" fill="#f2704f"></rect>
-                <rect x="52" y="150" width="20" height="14" fill="#f2704f"></rect>
-                <path d="M50 120 L74 120 L69 108 L55 108 Z" fill="#173a3a"></path>
-                <circle cx="62" cy="103" r="5" fill="#f0b429"></circle>
+                <rect x="52" y="120" width="20" height="14" fill="#2f5d8a"></rect>
+                <rect x="52" y="150" width="20" height="14" fill="#2f5d8a"></rect>
+                <path d="M50 120 L74 120 L69 108 L55 108 Z" fill="#262b33"></path>
+                <circle cx="62" cy="103" r="5" fill="#f0cf7e"></circle>
               </g>
               <!-- dock -->
-              <rect x="30" y="196" width="120" height="9" rx="3" fill="#c98a52"></rect>
-              <rect x="44" y="205" width="7" height="20" fill="#a06a3a"></rect>
-              <rect x="128" y="205" width="7" height="20" fill="#a06a3a"></rect>
+              <rect x="30" y="196" width="120" height="9" rx="3" fill="#b08a5e"></rect>
+              <rect x="44" y="205" width="7" height="20" fill="#8a6a44"></rect>
+              <rect x="128" y="205" width="7" height="20" fill="#8a6a44"></rect>
               <!-- boat -->
               <g>
                 <path d="M212 214 h84 l-14 26 h-56 z" fill="#fff"></path>
-                <path d="M212 214 h84 l-4 8 h-76 z" fill="#e0562f"></path>
-                <rect x="250" y="150" width="4" height="66" fill="#173a3a"></rect>
-                <path d="M254 152 L300 206 L254 206 Z" fill="#f2704f"></path>
-                <path d="M250 152 L214 206 L250 206 Z" fill="#ffd07a"></path>
+                <path d="M212 214 h84 l-4 8 h-76 z" fill="#24486c"></path>
+                <rect x="250" y="150" width="4" height="66" fill="#262b33"></rect>
+                <path d="M254 152 L300 206 L254 206 Z" fill="#2f5d8a"></path>
+                <path d="M250 152 L214 206 L250 206 Z" fill="#ede4cd"></path>
               </g>
               <!-- waves -->
-              <g stroke="#eafaf7" stroke-width="3" fill="none" opacity=".7" stroke-linecap="round">
+              <g stroke="#e6eef7" stroke-width="3" fill="none" opacity=".7" stroke-linecap="round">
                 <path d="M40 250 q14 -8 28 0 t28 0"></path>
                 <path d="M150 268 q14 -8 28 0 t28 0"></path>
                 <path d="M300 256 q14 -8 28 0 t28 0"></path>
@@ -140,10 +125,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             </svg>
           </div>
           <div class="float-chip chip-1">
-            <span class="b bg-teal"
+            <span class="b badge-mist"
               ><svg
                 viewBox="0 0 24 24"
-                class="st-teal"
+                class="st-accent"
                 stroke-linecap="round"
                 stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg
               ></span
@@ -151,10 +136,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             Backed up &amp; safe
           </div>
           <div class="float-chip chip-2">
-            <span class="b bg-coral"
+            <span class="b badge-mist"
               ><svg
                 viewBox="0 0 24 24"
-                class="st-coral"
+                class="st-accent"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 ><path d="M4 18v-6a8 8 0 0116 0v6"></path><rect
@@ -170,7 +155,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
         </div>
       </div>
       <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"
-        ><path d="M0 30 Q 180 60 360 30 T 720 30 T 1080 30 T 1440 30 V60 H0 Z" fill="#f6ecdf"></path></svg
+        ><path d="M0 30 Q 180 60 360 30 T 720 30 T 1080 30 T 1440 30 V60 H0 Z" fill="#f2f0ea"></path></svg
       >
     </section>
 
@@ -187,8 +172,8 @@ import SiteLayout from "../layouts/SiteLayout.astro";
         </div>
         <div class="cards">
           <article class="card">
-            <div class="icon-badge bg-coral">
-              <svg viewBox="0 0 24 24" class="st-coral" stroke-linecap="round" stroke-linejoin="round"
+            <div class="icon-badge badge-mist">
+              <svg viewBox="0 0 24 24" class="st-accent" stroke-linecap="round" stroke-linejoin="round"
                 ><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg
               >
             </div>
@@ -199,8 +184,8 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             </p>
           </article>
           <article class="card">
-            <div class="icon-badge bg-teal">
-              <svg viewBox="0 0 24 24" class="st-teal" stroke-linecap="round" stroke-linejoin="round"
+            <div class="icon-badge badge-mist">
+              <svg viewBox="0 0 24 24" class="st-accent" stroke-linecap="round" stroke-linejoin="round"
                 ><path d="M4 18v-6a8 8 0 0116 0v6"></path><rect x="2" y="14" width="4" height="6" rx="1.5"
                 ></rect><rect x="18" y="14" width="4" height="6" rx="1.5"></rect></svg
               >
@@ -211,14 +196,14 @@ import SiteLayout from "../layouts/SiteLayout.astro";
               securely and sort it, kindly and quickly.
             </p>
           </article>
-          <article class="card" style="background:var(--ink);border:none;color:var(--cream)">
+          <article class="card" style="background:var(--ink);border:none;color:var(--paper)">
             <div class="icon-badge" style="background:rgba(255,255,255,.12)">
-              <svg viewBox="0 0 24 24" stroke="#ffd07a" stroke-linecap="round" stroke-linejoin="round"
+              <svg viewBox="0 0 24 24" stroke="#9fc0dd" stroke-linecap="round" stroke-linejoin="round"
                 ><path d="M21 15a2 2 0 01-2 2H8l-4 4V5a2 2 0 012-2h11a2 2 0 012 2z"></path></svg
               >
             </div>
             <h3 style="color:#fff">Just want to chat it through?</h3>
-            <p style="color:#c9ddd9">
+            <p style="color:#c6ccd6">
               No sales pitch — just a friendly conversation about your business and how we might
               help. Grab a free consult.
             </p>
@@ -450,25 +435,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
       <div class="foot-top">
         <div>
           <div class="foot-brand">
-            <span class="mark" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,.08)"></circle>
-                <circle cx="24" cy="24" r="16" stroke="#f2704f" stroke-width="2.6"></circle>
-                <circle cx="24" cy="24" r="5.5" stroke="#57c2b6" stroke-width="2.6"></circle>
-                <circle cx="24" cy="24" r="2" fill="#f2704f"></circle>
-                <g stroke="#f2704f" stroke-width="2.6" stroke-linecap="round">
-                  <line x1="24" y1="6" x2="24" y2="13"></line><line x1="24" y1="35" x2="24" y2="42"></line>
-                  <line x1="6" y1="24" x2="13" y2="24"></line><line x1="35" y1="24" x2="42" y2="24"></line></g
-                >
-                <g stroke="#57c2b6" stroke-width="2.6" stroke-linecap="round">
-                  <line x1="11.5" y1="11.5" x2="16.5" y2="16.5"></line><line x1="31.5" y1="31.5" x2="36.5" y2="36.5"></line>
-                  <line x1="36.5" y1="11.5" x2="31.5" y2="16.5"></line><line x1="16.5" y1="31.5" x2="11.5" y2="36.5"></line></g
-                >
-              </svg>
-            </span>
+            <img class="mark" src="/brand-kit/icon.svg" alt="" width="38" height="38" />
             Kybernos IT
           </div>
-          <p style="margin-top:12px;max-width:34ch;color:#a9c6c1;font-size:.95rem">
+          <p style="margin-top:12px;max-width:34ch;color:#a2abba;font-size:.95rem">
             Friendly, remote IT support for small business. The steady hand at the helm of your
             technology.
           </p>
@@ -581,7 +551,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           errorEl = document.createElement("p");
           errorEl.setAttribute("role", "alert");
           errorEl.className = "form-note";
-          errorEl.style.color = "var(--coral, #e0562f)";
+          errorEl.style.color = "var(--accent-dk, #24486c)";
           errorEl.textContent =
             "Something went wrong — please email us directly at info@kybernosit.com";
           form.appendChild(errorEl);
